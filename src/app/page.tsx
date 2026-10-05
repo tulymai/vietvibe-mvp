@@ -161,7 +161,7 @@ export default function Page() {
 
   if (showResults) {
     return (
-      <main className="min-h-screen overflow-hidden bg-[#fcfaf6] pb-20 text-[#2c302e]">
+      <main className="min-h-screen overflow-hidden bg-[#fcfaf6] pb-12 text-[#2c302e]">
         <div className="relative mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-12">
           <div className="pointer-events-none absolute -left-28 top-16 h-72 w-72 rounded-full bg-[#d4b5b0]/30 blur-3xl" />
           <div className="pointer-events-none absolute -right-28 top-72 h-72 w-72 rounded-full bg-[#0b5c5c]/10 blur-3xl" />
@@ -214,10 +214,10 @@ export default function Page() {
               return (
                 <article
                   key={look.id}
-                  className="group overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white shadow-[0_20px_55px_-38px_rgba(43,48,46,0.5)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_65px_-35px_rgba(43,48,46,0.45)] md:grid md:grid-cols-[1fr_1fr]"
+                  className="group overflow-hidden rounded-[1.5rem] border border-stone-200/80 bg-white sm:rounded-[2rem] md:grid md:grid-cols-[1fr_1fr]"
                 >
                   <div
-                    className={`relative flex min-h-[560px] flex-col overflow-hidden bg-gradient-to-br ${look.gradient} p-6 md:min-h-full md:p-8`}
+                    className={`relative flex min-h-[380px] p-5 sm:min-h-[440px] sm:p-6 md:min-h-full md:p-8 flex-col overflow-hidden bg-gradient-to-br ${look.gradient} p-6 md:min-h-full md:p-8`}
                   >
                     <div className="absolute inset-x-0 top-0 h-1 bg-white/70" />
                     <div className="absolute -right-16 top-20 h-56 w-56 rounded-full border-[20px] border-white/25" />
@@ -239,15 +239,15 @@ export default function Page() {
                     </div>
 
                     <div className="relative z-10 flex flex-1 items-center justify-center py-5">
-                      <div className="relative grid h-[290px] w-[250px] place-items-center rounded-[3rem] border border-white/50 bg-white/15 shadow-[0_24px_45px_-28px_rgba(44,48,46,0.45)] backdrop-blur-[2px] md:h-[390px] md:w-[320px]">
-                        <span className="absolute left-5 top-5 text-xs font-bold tracking-[0.25em] text-stone-600/70">
-                          LOOK 0{index + 1}
-                        </span>
-
+                      <div className="relative grid h-[270px] w-[235px] place-items-center rounded-[2.5rem] border border-white/60 bg-white/20 shadow-[0_24px_45px_-28px_rgba(44,48,46,0.45)] backdrop-blur-[3px] sm:h-[330px] sm:w-[290px] md:h-[440px] md:w-[360px]">
+                        {" "}
+                        <p className="absolute left-4 top-1/2 z-20 -translate-y-1/2 [writing-mode:vertical-rl] rotate-180 text-[9px] font-semibold uppercase tracking-[0.22em] text-stone-600/60">
+                          VietVibe Edition · Look 0{index + 1}
+                        </p>
                         <img
                           src={look.image}
                           alt={`Minh họa ${look.outfitType}`}
-                          className="relative z-10 h-[440px] w-auto object-contain drop-shadow-[0_32px_24px_rgba(44,48,46,0.34)] transition duration-500 group-hover:scale-105 md:h-[355px]"
+                          className="relative z-10 h-[255px] w-auto object-contain drop-shadow-[0_24px_18px_rgba(44,48,46,0.28)] transition duration-500 group-hover:scale-105 sm:h-[310px] md:h-[410px]"
                         />
                       </div>
                     </div>
@@ -283,13 +283,13 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <div className="p-6 md:p-8">
+                  <div className="p-5 sm:p-6 md:p-8">
                     <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
                       <div>
                         <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#9b3222]">
                           Gợi ý phối
                         </p>
-                        <h2 className="font-editorial text-3xl font-semibold">
+                        <h2 className="font-editorial break-words text-2xl font-semibold leading-tight tracking-tight text-stone-900 sm:text-3xl">
                           {look.name}
                         </h2>
                       </div>
