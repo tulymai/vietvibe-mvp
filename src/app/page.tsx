@@ -140,7 +140,7 @@ export default function Page() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#9B3222]">
               VietVibe gợi ý
             </p>
-            <h1 className="mb-3 text-4xl font-serif md:text-5xl">
+            <h1 className="mb-3 text-4xl font-sans md:text-5xl">
               Gợi ý phong cách
             </h1>
             <p className="text-sm text-stone-500 md:text-base">
@@ -161,7 +161,7 @@ export default function Page() {
                     alt={`Minh họa ${look.outfitType}`}
                     className="h-48 w-auto object-contain"
                   />
-                  <span className="mt-4 text-center font-serif text-lg font-medium">
+                  <span className="mt-4 text-center font-sans text-lg font-medium">
                     {look.outfitType}
                   </span>
                   <span className="absolute left-4 top-4 flex items-center gap-1 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-[#0B5C5C]">
@@ -174,7 +174,7 @@ export default function Page() {
                 </div>
                 <div className="flex-1 p-6 md:p-8">
                   <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
-                    <h2 className="text-2xl font-serif">{look.name}</h2>
+                    <h2 className="text-2xl font-sans">{look.name}</h2>
                     <button
                       onClick={() =>
                         setOpenCompareId(
@@ -282,7 +282,7 @@ export default function Page() {
           <div className="mb-4 inline-flex rounded-2xl bg-[#9B3222]/10 p-3.5 text-[#9B3222]">
             <Sparkles className="h-8 w-8" />
           </div>
-          <h1 className="text-5xl font-serif">VietVibe</h1>
+          <h1 className="text-5xl font-sans">VietVibe</h1>
           <p className="mt-3 text-lg text-stone-500">
             Phối đẹp, hiểu đúng chất Việt.
           </p>
