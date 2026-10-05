@@ -43,7 +43,7 @@ const mockLooks = [
     outfit: "Áo ngũ thân tay chẽn kết hợp quần âu ống rộng",
     accessories: "Quạt giấy gấp nhỏ gọn, giày bệt mũi nhọn",
     palette: ["#F5F5F0", "#E1D9C5", "#2C302E"],
-    emoji: "🍵",
+    image: "/ao-ngu-than.png",
     gradient: "from-[#F5F5F0] to-[#E1D9C5]",
     heritageScore: 70,
     remixScore: 85,
@@ -65,7 +65,7 @@ const mockLooks = [
     outfit: "Áo tấc phối quần lĩnh tông trầm",
     accessories: "Khăn vấn nhẹ nhàng, guốc mộc quai trong",
     palette: ["#D4B5B0", "#9B3222", "#4A3B39"],
-    emoji: "🌸",
+    image: "/ao-tac.png",
     gradient: "from-[#FDFBF7] to-[#D4B5B0]",
     heritageScore: 90,
     remixScore: 40,
@@ -86,7 +86,7 @@ const mockLooks = [
     outfit: "Áo cách tân lấy cảm hứng từ Nhật Bình",
     accessories: "Trâm cài tóc tối giản, khuyên tai nụ",
     palette: ["#0B5C5C", "#3D5A5A", "#C9A77D"],
-    emoji: "🦚",
+    image: "/dau-an-hoang-hoa.png",
     gradient: "from-[#E6EBEB] to-[#99B2B2]",
     heritageScore: 60,
     remixScore: 95,
@@ -156,7 +156,11 @@ export default function Page() {
                 <div
                   className={`relative flex h-52 flex-col items-center justify-center bg-gradient-to-br p-8 md:h-auto md:w-1/3 ${look.gradient}`}
                 >
-                  <span className="text-7xl">{look.emoji}</span>
+                  <img
+                    src={look.image}
+                    alt={`Minh họa ${look.outfitType}`}
+                    className="h-48 w-auto object-contain"
+                  />
                   <span className="mt-4 text-center font-serif text-lg font-medium">
                     {look.outfitType}
                   </span>
